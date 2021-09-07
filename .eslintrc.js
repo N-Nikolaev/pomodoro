@@ -7,6 +7,7 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
     'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -20,6 +21,7 @@ module.exports = {
     'react',
     '@typescript-eslint',
     'react-hooks',
+    'prettier',
   ],
   rules: {
     'react-hooks/rules-of-hooks': 'error',
@@ -30,7 +32,7 @@ module.exports = {
         'extensions': [
           '.tsx'
         ]
-      }
+      },
     ],
     'import/prefer-default-export': 'off',
     'import/extensions': [
@@ -39,12 +41,16 @@ module.exports = {
       {
         'ts': 'never',
         'tsx': 'never'
-      }
-    ]
+      },
+    ],
+    'prettier/prettier': 'error',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'react/jsx-one-expression-per-line': 'off',
+    'no-use-before-define':'off',
   },
   settings: {
     'import/resolver': {
         'typescript': {}
-    }
+    },
   },
 };
