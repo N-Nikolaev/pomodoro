@@ -43,7 +43,12 @@ module.exports = {
         'tsx': 'never'
       },
     ],
-    'prettier/prettier': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        'endOfLine': 'auto',
+      },
+    ],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'no-use-before-define':'off',
